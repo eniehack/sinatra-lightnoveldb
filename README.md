@@ -1,0 +1,1 @@
+# sinatra-lightnoveldb
