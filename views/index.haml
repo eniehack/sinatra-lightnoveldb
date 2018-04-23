@@ -1,0 +1,39 @@
+:css
+  #custom-restricted-width {
+    /* To limit the menu width to the content of the menu: */
+    display: inline-block;
+    /* Or set the width explicitly: */
+    /* width: 10em; */
+  }
+
+%div{class: "pure-menu pure-menu-horizontal"}
+  %ul{class: "pure-menu-list"}
+    %li{class: "pure-menu-item"}
+      %a{href: "search", class: "pure-menu-link"}検索
+    %li{class: "pure-menu-item"}
+      %a{href: "#about", class: "pure-menu-link"}このサイトについて
+    %li{class: "pure-menu-item"}
+      %a{href: "#about-good-novel",  class: "pure-menu-link"}名作ライトノベルの定義とは？
+    /%li{class: "pure-menu-item"}%a{href: "#about-us", class: "pure-menu-link"}Studio 4単位とは？
+
+%h2{id: "about"}このサイトについて
+このサイトはライトノベルのデータベースって無くね？と考えた作者の自己満足と作者の勉強用にと作られたサイトです。
+%br
+オリジナルのPython(Flask)版からRubyのWebフレームワーク、
+%a{href: "http://sinatrarb.com/"}Sinatra
+に移植したバージョンです。
+%br
+
+を移植したやつです
+Gitリポジトリは
+%a{href: "https://github.com/eniehack/sinatra-lightnoveldb"}ここ
+です
+
+%h2{id: "about-good-novel"}このサイトのいう、名作ライトノベルの定義は？
+名作ライトノベルとしてこのデータベースに登録されるための条件は、
+%ol
+  %li その作品の作者、または、読者の大半がこれはライトノベルだ、と主張しているもの、もしくは、その作品が刊行されているレーベルがライトノベルのレーベルであるとわかるもの。
+  %li 物語の一部または全てが映像化されている、もしくはされる予定のもの。
+  %li 根強く読者の支持を得ているもの。
+  %li 新人賞を除く、何らかの賞を受賞しているもの。
+のうち、3つ以上を満たすものです。あとは作者の独断と偏見です。
